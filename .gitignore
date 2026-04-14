@@ -1,0 +1,26 @@
+# 환경변수 (API 키 포함)
+**/.env
+.env
+
+# Gradle
+backend/.gradle/
+backend/build/
+backend/out/
+backend/.kotlin/
+
+# Flutter
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+
+# IDE
+.idea/
+*.iml
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
+**/.DS_Store

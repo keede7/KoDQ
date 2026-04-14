@@ -1,0 +1,9 @@
+ktor:
+  application:
+    modules:
+      - com.koder.ApplicationKt.module
+  deployment:
+    port: ${PORT:8080}
+    watch:
+      - classes
+      - resources
