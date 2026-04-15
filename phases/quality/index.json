@@ -13,7 +13,10 @@
     {
       "step": 1,
       "name": "prompt-tuning",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-04-15T15:32:03+0900",
+      "summary": "ClaudeService 프롬프트 개선 — 역할 설정, 색상·재질·스타일 분석 기준, score 5단계 기준, 의상 없는 사진 분석불가 처리, score<70 개선 제안 강제화, 순수 JSON 반환 재강조",
+      "completed_at": "2026-04-15T15:35:00+0900"
     },
     {
       "step": 2,
