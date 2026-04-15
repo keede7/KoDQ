@@ -7,7 +7,8 @@
       "name": "backend-tests",
       "status": "completed",
       "started_at": "2026-04-15T15:28:11+0900",
-      "summary": "IClaudeService 인터페이스 추출 + detectMediaType internal 변경 + DetectMediaTypeTest(6케이스) · StyleRoutesTest(3케이스) 작성, 전체 테스트 통과"
+      "summary": "IClaudeService 인터페이스 추출 + detectMediaType internal 변경 + DetectMediaTypeTest(6케이스) · StyleRoutesTest(3케이스) 작성, 전체 테스트 통과",
+      "completed_at": "2026-04-15T15:32:02+0900"
     },
     {
       "step": 1,
