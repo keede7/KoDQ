@@ -24,7 +24,7 @@
       "status": "completed",
       "started_at": "2026-04-15T15:33:06+0900",
       "summary": "MaterialApp→CupertinoApp 전환, 전 화면 Cupertino 위젯 교체(NavigationBar·Button·Dialog·ActivityIndicator), 이미지 미리보기+점선 테두리 플레이스홀더, 분析불가 판정 케이스, iOS 색상 스타일 적용",
-      "completed_at": "2026-04-15T15:45:00+0900"
+      "completed_at": "2026-04-15T15:36:59+0900"
     }
   ],
   "created_at": "2026-04-15T15:28:11+0900"
