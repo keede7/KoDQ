@@ -19,7 +19,11 @@ data class AnalyzeResponse(
     val details: String
 )
 
-class ClaudeService {
+interface IClaudeService {
+    suspend fun analyzeOutfit(imageBytes: ByteArray, mediaType: String): AnalyzeResponse
+}
+
+class ClaudeService : IClaudeService {
     private val dotenv = dotenv { ignoreIfMissing = true }
     private val apiKey = dotenv["ANTHROPIC_API_KEY"]
     private val json = Json { ignoreUnknownKeys = true }
@@ -29,7 +33,7 @@ class ClaudeService {
         }
     }
 
-    suspend fun analyzeOutfit(imageBytes: ByteArray, mediaType: String): AnalyzeResponse {
+    override suspend fun analyzeOutfit(imageBytes: ByteArray, mediaType: String): AnalyzeResponse {
         val base64Image = Base64.getEncoder().encodeToString(imageBytes)
         val prompt = """
             이 사진에서 상의와 하의의 코디 궁합을 분석해주세요. 만약 신발, 양말, 악세서리까지 있다면 포함하여 분석해주세요. 
