@@ -1,0 +1,32 @@
+{
+  "project": "KoDQ",
+  "phase": "quality",
+  "steps": [
+    {
+      "step": 0,
+      "name": "backend-tests",
+      "status": "completed",
+      "started_at": "2026-04-15T15:28:11+0900",
+      "summary": "IClaudeService 인터페이스 추출 + detectMediaType internal 변경 + DetectMediaTypeTest(6케이스) · StyleRoutesTest(3케이스) 작성, 전체 테스트 통과",
+      "completed_at": "2026-04-15T15:32:02+0900"
+    },
+    {
+      "step": 1,
+      "name": "prompt-tuning",
+      "status": "completed",
+      "started_at": "2026-04-15T15:32:03+0900",
+      "summary": "ClaudeService 프롬프트 개선 — 역할 설정, 색상·재질·스타일 분석 기준, score 5단계 기준, 의상 없는 사진 분석불가 처리, score<70 개선 제안 강제화, 순수 JSON 반환 재강조",
+      "completed_at": "2026-04-15T15:33:06+0900"
+    },
+    {
+      "step": 2,
+      "name": "mobile-ux",
+      "status": "completed",
+      "started_at": "2026-04-15T15:33:06+0900",
+      "summary": "MaterialApp→CupertinoApp 전환, 전 화면 Cupertino 위젯 교체(NavigationBar·Button·Dialog·ActivityIndicator), 이미지 미리보기+점선 테두리 플레이스홀더, 분析불가 판정 케이스, iOS 색상 스타일 적용",
+      "completed_at": "2026-04-15T15:36:59+0900"
+    }
+  ],
+  "created_at": "2026-04-15T15:28:11+0900",
+  "completed_at": "2026-04-15T15:37:00+0900"
+}

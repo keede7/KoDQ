@@ -1,6 +1,7 @@
 package com.kodq.routes
 
 import com.kodq.services.ClaudeService
+import com.kodq.services.IClaudeService
 import io.ktor.http.*
 import io.ktor.http.content.*
 import io.ktor.server.application.*
@@ -8,7 +9,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-private fun detectMediaType(bytes: ByteArray): String? {
+internal fun detectMediaType(bytes: ByteArray): String? {
     if (bytes.size < 12) return null
     return when {
         bytes[0] == 0xFF.toByte() && bytes[1] == 0xD8.toByte() -> "image/jpeg"
@@ -20,8 +21,7 @@ private fun detectMediaType(bytes: ByteArray): String? {
     }
 }
 
-fun Route.styleRoutes() {
-    val claudeService = ClaudeService()
+fun Route.styleRoutes(claudeService: IClaudeService = ClaudeService()) {
 
     post("/api/analyze") {
         val multipart = call.receiveMultipart()
